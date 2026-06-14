@@ -1,0 +1,72 @@
+{
+  "provider": "liqpay",
+  "fetched": "2026-06-13",
+  "posts": [
+    {
+      "title": "Building a Custom Checkout Experience with LiqPay's Payment API",
+      "url": "https://reintech.io/blog/custom-checkout-experience-liqpay-payment-api",
+      "author": "Arthur C. Codex",
+      "date": "2024-06-02",
+      "description": "A comprehensive guide to implementing a production-ready payment checkout using LiqPay's Payment API, focusing on creating seamless user experiences while maintaining security standards appropriate for financial transactions.",
+      "topics": [
+        "checkout",
+        "payments",
+        "server-side integration",
+        "webhooks",
+        "PHP",
+        "Node.js",
+        "sandbox",
+        "security"
+      ]
+    },
+    {
+      "title": "Implementing Secure Payment Processing with LiqPay API",
+      "url": "https://reintech.io/blog/implementing-secure-payment-processing-liqpay-api",
+      "author": "Arthur C. Codex",
+      "date": "2024-06-06",
+      "description": "A technical guide for developers on integrating LiqPay's payment gateway with emphasis on security best practices and production-ready PHP implementation, covering PCI DSS compliance, 3D Secure authentication, fraud detection, and multi-currency support.",
+      "topics": [
+        "security",
+        "PCI DSS",
+        "3D Secure",
+        "PHP",
+        "signature generation",
+        "callback verification",
+        "fraud detection"
+      ]
+    },
+    {
+      "title": "Handling Payment Notifications and Webhooks with LiqPay API",
+      "url": "https://reintech.io/blog/handling-payment-notifications-liqpay-api",
+      "author": "Arthur C. Codex",
+      "date": "2024-06-07",
+      "description": "A comprehensive guide to implementing secure webhook handling for LiqPay payment gateway, covering real-time transaction notifications, signature verification, idempotency patterns, and production-ready code examples.",
+      "topics": [
+        "webhooks",
+        "callbacks",
+        "signature verification",
+        "idempotency",
+        "Node.js",
+        "Redis",
+        "monitoring",
+        "scaling"
+      ]
+    },
+    {
+      "title": "Managing Recurring Payments and Subscriptions using LiqPay API",
+      "url": "https://reintech.io/blog/managing-recurring-payments-subscriptions-liqpay-api",
+      "author": "Arthur C. Codex",
+      "date": "2024-06-08",
+      "description": "A comprehensive guide for implementing subscription-based billing through LiqPay's payment API, covering token-based recurring payment setup, webhook handling, subscription monitoring, cancellation flows, infrastructure scaling, and PCI compliance.",
+      "topics": [
+        "subscriptions",
+        "recurring payments",
+        "billing",
+        "tokens",
+        "webhooks",
+        "PCI DSS",
+        "scaling"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "LiqPay",
+  "description": "LiqPay is a Ukrainian payment platform operated by PrivatBank that provides REST APIs for accepting card payments, creating hosted payment pages, processing subscriptions, managing refunds, sending invoices, and conducting card-to-card transfers. It supports Mastercard, Visa, Apple Pay, Google Pay, and Privat24 wallets across 120+ countries, with full fiscalization (RRO) support for Ukrainian merchants.",
+  "url": "https://www.liqpay.ua",
+  "logo": "https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "PrivatBank",
+    "url": "https://www.privatbank.ua"
+  },
+  "foundingLocation": {
+    "@type": "Place",
+    "addressCountry": "UA",
+    "name": "Ukraine"
+  },
+  "areaServed": {
+    "@type": "GeoShape",
+    "description": "120+ countries"
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "technical support",
+      "email": "liqpay.support@privatbank.ua",
+      "url": "https://www.liqpay.ua/en/support"
+    }
+  ],
+  "sameAs": [
+    "https://github.com/liqpay"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "LiqPay Payment APIs",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "LiqPay Checkout API",
+        "description": "Server-side API for generating signed payment requests that redirect customers to the LiqPay hosted checkout page. Supports one-time payments, donations, split payments, two-stage holds, and QR-code payments.",
+        "url": "https://www.liqpay.ua/documentation/en/api/aquiring/checkout/"
+      },
+      {
+        "@type": "Offer",
+        "name": "LiqPay Payment Status API",
+        "description": "Server-to-server API for retrieving the current status and details of a payment by order ID.",
+        "url": "https://www.liqpay.ua/en/doc/api/information"
+      },
+      {
+        "@type": "Offer",
+        "name": "LiqPay Subscriptions API",
+        "description": "API for creating and managing recurring payment subscriptions with daily, weekly, monthly, and yearly billing cycles.",
+        "url": "https://www.liqpay.ua/documentation/en"
+      },
+      {
+        "@type": "Offer",
+        "name": "LiqPay Refunds API",
+        "description": "Server-to-server API for initiating full or partial refunds on previously completed payments.",
+        "url": "https://www.liqpay.ua/documentation/en"
+      },
+      {
+        "@type": "Offer",
+        "name": "LiqPay Invoice API",
+        "description": "API for generating and sending payment invoices to customers by email or phone number.",
+        "url": "https://www.liqpay.ua/documentation/en"
+      },
+      {
+        "@type": "Offer",
+        "name": "LiqPay P2P Transfers API",
+        "description": "API for card-to-card (P2P) money transfers between individuals by card number, card token, Privat24 account, mobile phone, or email.",
+        "url": "https://www.liqpay.ua/documentation/en/api/p2p/"
+      },
+      {
+        "@type": "Offer",
+        "name": "LiqPay Payouts API",
+        "description": "API for merchant-initiated payouts (credit transfers) to customer cards or accounts, supporting UAH, USD, and EUR.",
+        "url": "https://www.liqpay.ua/documentation/en/api/p2p_credit/"
+      },
+      {
+        "@type": "Offer",
+        "name": "LiqPay Payment Archive API",
+        "description": "Informational API for retrieving a full archive of accepted payments for reconciliation, reporting, and accounting.",
+        "url": "https://www.liqpay.ua/en/doc/api/information"
+      }
+    ]
+  },
+  "makesOffer": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "LiqPay PHP SDK",
+      "applicationCategory": "DeveloperApplication",
+      "url": "https://github.com/liqpay/sdk-php",
+      "programmingLanguage": "PHP"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "LiqPay Python SDK",
+      "applicationCategory": "DeveloperApplication",
+      "url": "https://github.com/liqpay/sdk-python",
+      "programmingLanguage": "Python"
+    }
+  ],
+  "termsOfService": "https://www.liqpay.ua/en/doc/informations",
+  "subjectOf": [
+    {
+      "@type": "TechArticle",
+      "name": "Building a Custom Checkout Experience with LiqPay's Payment API",
+      "url": "https://reintech.io/blog/custom-checkout-experience-liqpay-payment-api",
+      "author": "Arthur C. Codex",
+      "datePublished": "2024-06-02",
+      "description": "A comprehensive guide to implementing a production-ready payment checkout using LiqPay's Payment API."
+    },
+    {
+      "@type": "TechArticle",
+      "name": "Implementing Secure Payment Processing with LiqPay API",
+      "url": "https://reintech.io/blog/implementing-secure-payment-processing-liqpay-api",
+      "author": "Arthur C. Codex",
+      "datePublished": "2024-06-06",
+      "description": "A technical guide on integrating LiqPay's payment gateway with emphasis on security best practices and PCI DSS compliance."
+    },
+    {
+      "@type": "TechArticle",
+      "name": "Handling Payment Notifications and Webhooks with LiqPay API",
+      "url": "https://reintech.io/blog/handling-payment-notifications-liqpay-api",
+      "author": "Arthur C. Codex",
+      "datePublished": "2024-06-07",
+      "description": "A comprehensive guide to implementing secure webhook handling for LiqPay payment gateway."
+    },
+    {
+      "@type": "TechArticle",
+      "name": "Managing Recurring Payments and Subscriptions using LiqPay API",
+      "url": "https://reintech.io/blog/managing-recurring-payments-subscriptions-liqpay-api",
+      "author": "Arthur C. Codex",
+      "datePublished": "2024-06-08",
+      "description": "A guide for implementing subscription-based billing through LiqPay's payment API."
+    }
+  ]
+}
