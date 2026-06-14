@@ -1,0 +1,45 @@
+name: LiqPay Plans
+description: LiqPay operates on a pay-per-transaction model with no monthly fees or setup costs. Merchant accounts are self-service through the liqpay.ua portal backed by PrivatBank. Fee rates depend on card origin (domestic vs. international) and transaction volume; high-volume merchants may negotiate reduced rates directly with PrivatBank.
+plans:
+
+  - name: Standard Merchant Account
+    description: Default plan for all registered LiqPay merchants. No monthly fee, no setup fee, no hidden charges. Merchants pay a percentage fee per transaction that varies by card type.
+    url: https://www.liqpay.ua/en/developers
+    free: false
+    rateLimits:
+      - type: Requests
+        limit: contact LiqPay
+        period: per day
+    contact:
+      - FN: LiqPay Support
+        email: liqpay.support@privatbank.ua
+        url: https://www.liqpay.ua/en/support
+    features:
+      - Checkout API
+      - Payment Status API
+      - Subscriptions API
+      - Refunds API
+      - Invoice API
+      - P2P Transfers API
+      - Payouts API
+      - Webhooks / Callbacks
+      - Payment Archive API
+      - Sandbox / Test Environment
+      - Apple Pay and Google Pay
+      - Privat24 wallet payments
+      - QR code payments
+      - Fiscalization (RRO) support
+      - 120+ country acceptance
+
+  - name: High-Volume Merchant
+    description: Merchants with significant monthly turnover may qualify for negotiated reduced transaction rates. Requires direct engagement with LiqPay/PrivatBank sales.
+    url: https://www.liqpay.ua/en/support
+    free: false
+    contact:
+      - FN: LiqPay Sales
+        email: liqpay.support@privatbank.ua
+        url: https://www.liqpay.ua/en/support
+    features:
+      - All Standard Merchant features
+      - Reduced transaction fee rate
+      - Dedicated account management

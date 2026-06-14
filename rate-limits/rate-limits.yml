@@ -1,0 +1,27 @@
+name: LiqPay Rate Limits
+description: LiqPay does not publish explicit API rate limit thresholds in their public documentation. The platform is designed for production payment traffic and enforces anti-fraud controls that may restrict unusual transaction volumes or patterns. Merchants experiencing limit errors will receive error code "limit" in API responses. Contact liqpay.support@privatbank.ua for production throughput requirements.
+url: https://www.liqpay.ua/documentation/en
+rateLimits:
+
+  - name: Transaction Anti-Fraud Limit
+    description: LiqPay's anti-fraud engine may block or flag requests that exceed normal transaction velocity for a given merchant or cardholder. Returns error code "limit" when triggered.
+    type: Anti-Fraud Velocity
+    limit: Undisclosed
+    period: Rolling window
+    errorCode: limit
+    contact:
+      - FN: LiqPay Support
+        email: liqpay.support@privatbank.ua
+        url: https://www.liqpay.ua/en/support
+
+  - name: Sandbox Environment
+    description: Sandbox (test) mode is available for all merchant accounts using the sandbox parameter set to 1. No real funds are moved. Test card numbers are provided in the documentation.
+    type: Sandbox
+    limit: No published limit
+    period: N/A
+    notes: Use sandbox=1 in request parameters to activate test mode
+
+  - name: API Request Authentication
+    description: All API requests require a valid public key, base64-encoded data payload, and SHA-1 HMAC signature. Requests with invalid signatures return error code "invalid_signature" and are rejected immediately.
+    type: Authentication
+    errorCode: invalid_signature

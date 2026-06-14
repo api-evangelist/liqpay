@@ -1,0 +1,54 @@
+name: LiqPay FinOps
+description: LiqPay transaction pricing is usage-based with no monthly or setup fees. Fees are charged as a percentage of each transaction amount. Domestic Ukrainian card transactions carry a 0.6% merchant fee; international cards may reach up to 2%. High-volume merchants can negotiate reduced rates with PrivatBank. Settlements to merchant accounts occur instantly (same-bank) or within one to three business days (inter-bank).
+url: https://www.liqpay.ua/en/developers
+finops:
+
+  - name: Domestic Card Transaction Fee
+    description: Per-transaction fee for payments made with Mastercard or Visa cards issued by Ukrainian banks.
+    type: Transaction Fee
+    model: Percentage
+    rate: "0.6%"
+    currency: UAH
+    notes: Applies to PrivatBank and other Ukrainian-issued Mastercard/Visa cards
+
+  - name: International Card Transaction Fee
+    description: Per-transaction fee for payments made with internationally-issued Mastercard or Visa cards.
+    type: Transaction Fee
+    model: Percentage
+    rate: "Up to 2%"
+    currency: USD/EUR/UAH
+    notes: Exact rate depends on card BIN country and merchant agreement
+
+  - name: Monthly Fee
+    description: LiqPay does not charge a monthly platform or subscription fee.
+    type: Monthly Fee
+    model: Fixed
+    rate: "0"
+    notes: No monthly fee for standard merchant accounts
+
+  - name: Setup Fee
+    description: LiqPay does not charge a setup or onboarding fee for new merchant accounts.
+    type: Setup Fee
+    model: Fixed
+    rate: "0"
+    notes: Self-service registration at liqpay.ua
+
+  - name: High-Volume Discount
+    description: Merchants with large monthly transaction volumes may qualify for negotiated fee reductions. Contact LiqPay/PrivatBank sales to discuss.
+    type: Volume Discount
+    model: Negotiated
+    rate: Contact LiqPay
+    contact:
+      - FN: LiqPay Support
+        email: liqpay.support@privatbank.ua
+        url: https://www.liqpay.ua/en/support
+
+  - name: Settlement — Same-Bank
+    description: Funds from transactions settled between PrivatBank accounts are transferred to the merchant account instantly, around the clock.
+    type: Settlement
+    timing: Instant (24/7)
+
+  - name: Settlement — Inter-Bank
+    description: Funds from transactions involving non-PrivatBank cards or accounts are transferred within one business day, though some settlements may take up to three business days.
+    type: Settlement
+    timing: 1–3 business days
