@@ -1,6 +1,6 @@
 name: LiqPay
 description: LiqPay is a Ukrainian payment platform operated by PrivatBank that provides REST APIs for accepting card payments, creating hosted payment pages, processing subscriptions, managing refunds, sending invoices, and conducting card-to-card transfers. It supports Mastercard, Visa, Apple Pay, Google Pay, and Privat24 wallets across 120+ countries, with full fiscalization (RRO) support for Ukrainian merchants.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Payments
   - Fintech
@@ -18,7 +18,7 @@ apis:
 
   - name: LiqPay Checkout API
     description: Server-side API for generating signed payment requests that redirect customers to the LiqPay hosted checkout page. Supports one-time payments, donations, split payments, two-stage holds, and QR-code payments. Authentication uses HMAC-SHA1 signatures derived from the merchant public and private keys.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.liqpay.ua/documentation/en/api/aquiring/checkout/
     baseURL: https://www.liqpay.ua
     tags:
@@ -41,7 +41,7 @@ apis:
 
   - name: LiqPay Payment Status API
     description: Server-to-server API for retrieving the current status and details of a payment by order ID. Returns action, amount, currency, payment status (success, failure, reversed, error), payment method, 3DS flag, card mask, and over 50 additional fields.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.liqpay.ua/en/doc/api/information
     baseURL: https://www.liqpay.ua
     tags:
@@ -61,7 +61,7 @@ apis:
 
   - name: LiqPay Subscriptions API
     description: API for creating and managing recurring payment subscriptions. Supports daily, weekly, monthly, and yearly billing cycles. Merchants can create subscriptions using a card token, update subscription amounts, or cancel (unsubscribe) at any time.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.liqpay.ua/documentation/en
     baseURL: https://www.liqpay.ua
     tags:
@@ -82,7 +82,7 @@ apis:
 
   - name: LiqPay Refunds API
     description: Server-to-server API for initiating full or partial refunds on previously completed payments. Refunds are returned to the original payment method (card or Privat24). Requires the original order ID and the amount to refund.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.liqpay.ua/documentation/en
     baseURL: https://www.liqpay.ua
     tags:
@@ -102,7 +102,7 @@ apis:
 
   - name: LiqPay Invoice API
     description: API for generating and sending payment invoices to customers by email or phone number. Invoices include itemized goods lists, expiration dates, and selectable payment actions (pay, hold, subscribe, donate). Invoices can also be cancelled before payment.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.liqpay.ua/documentation/en
     baseURL: https://www.liqpay.ua
     tags:
@@ -123,7 +123,7 @@ apis:
 
   - name: LiqPay P2P Transfers API
     description: API for card-to-card (P2P) money transfers between individuals. Supports transfers by card number, card token, Privat24 account, mobile phone number, or recipient email. Settlement is near-instant for same-bank transfers and within one business day for inter-bank transfers.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.liqpay.ua/documentation/en/api/p2p/
     baseURL: https://www.liqpay.ua
     tags:
@@ -144,7 +144,7 @@ apis:
 
   - name: LiqPay Payouts API
     description: API for merchant-initiated payouts (credit transfers) to customer cards or accounts. Used for marketplace disbursements, cashback, and refund-style credit operations. Supports UAH, USD, and EUR.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.liqpay.ua/documentation/en/api/p2p_credit/
     baseURL: https://www.liqpay.ua
     tags:
@@ -165,7 +165,7 @@ apis:
 
   - name: LiqPay Webhooks (Callbacks)
     description: Server-to-server callback notifications sent by LiqPay to the merchant server_url on payment events including successful payment, failure, chargeback, and reversal. Callback payloads are base64-encoded JSON signed with SHA-1 using the merchant private key for tamper detection.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.liqpay.ua/documentation/en
     baseURL: https://www.liqpay.ua
     tags:
@@ -186,7 +186,7 @@ apis:
 
   - name: LiqPay Payment Archive API
     description: Informational API for retrieving a full archive of accepted payments for the merchant account within a specified date range. Used for reconciliation, reporting, and accounting.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.liqpay.ua/en/doc/api/information
     baseURL: https://www.liqpay.ua
     tags:
