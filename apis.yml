@@ -216,9 +216,9 @@ common:
     url: https://www.liqpay.ua/documentation/en
   - type: SDKs
     url: https://github.com/liqpay
-  - type: SDK
+  - type: SDKs
     url: https://github.com/liqpay/sdk-php
-  - type: SDK
+  - type: SDKs
     url: https://github.com/liqpay/sdk-python
   - type: Status
     url: https://www.liqpay.ua/en/support
