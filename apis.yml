@@ -206,6 +206,8 @@ apis:
         url: https://www.liqpay.ua/en/support
 
 common:
+  - type: DomainSecurity
+    url: security/liqpay-domain-security.yml
   - type: Portal
     url: https://www.liqpay.ua/en/developers
   - type: Documentation
