@@ -25,7 +25,7 @@ tags:
 url: https://raw.githubusercontent.com/api-evangelist/liqpay/refs/heads/main/apis.yml
 created: "2026-06-13"
 modified: "2026-06-13"
-specificationVersion: "0.19"
+specificationVersion: '0.23'
 apis:
 
   - name: LiqPay Checkout API
