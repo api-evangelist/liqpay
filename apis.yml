@@ -18,6 +18,15 @@ tags:
   - Fintech
   - Ukraine
   - Cards
+  - Subscription
+  - Invoicing
+  - P2P Transfers
+  - PrivatBank
+tags_raw:
+  - Payments
+  - Fintech
+  - Ukraine
+  - Cards
   - Subscriptions
   - Invoicing
   - P2P Transfers
@@ -77,6 +86,10 @@ apis:
     humanURL: https://www.liqpay.ua/documentation/en
     baseURL: https://www.liqpay.ua
     tags:
+      - Subscription
+      - Recurring Payments
+      - Billing
+    tags_raw:
       - Subscriptions
       - Recurring Payments
       - Billing
@@ -181,6 +194,10 @@ apis:
     humanURL: https://www.liqpay.ua/documentation/en
     baseURL: https://www.liqpay.ua
     tags:
+      - Webhook
+      - Callbacks
+      - Event
+    tags_raw:
       - Webhooks
       - Callbacks
       - Events
