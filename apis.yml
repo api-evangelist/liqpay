@@ -244,6 +244,10 @@ apis:
   baseURL: https://www.liqpay.ua
   tags:
   - Reporting
+  - Archives
+  - Reconciliation
+  tags_raw:
+  - Reporting
   - Archive
   - Reconciliation
   properties:
