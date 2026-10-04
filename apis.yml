@@ -58,7 +58,6 @@ apis:
     keys.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.liqpay.ua/documentation/en/api/aquiring/checkout/
-  baseURL: https://www.liqpay.ua
   tags:
   - Checkout
   - Payments
@@ -82,7 +81,6 @@ apis:
     method, 3DS flag, card mask, and over 50 additional fields.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.liqpay.ua/en/doc/api/information
-  baseURL: https://www.liqpay.ua
   tags:
   - Payment Status
   - Transaction Lookup
@@ -103,7 +101,6 @@ apis:
     subscription amounts, or cancel (unsubscribe) at any time.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.liqpay.ua/documentation/en
-  baseURL: https://www.liqpay.ua
   tags:
   - Subscription
   - Recurring Payments
@@ -129,7 +126,6 @@ apis:
     ID and the amount to refund.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.liqpay.ua/documentation/en
-  baseURL: https://www.liqpay.ua
   tags:
   - Refunds
   - Reversals
@@ -150,7 +146,6 @@ apis:
     subscribe, donate). Invoices can also be cancelled before payment.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.liqpay.ua/documentation/en
-  baseURL: https://www.liqpay.ua
   tags:
   - Invoices
   - Billing
@@ -172,7 +167,6 @@ apis:
     for same-bank transfers and within one business day for inter-bank transfers.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.liqpay.ua/documentation/en/api/p2p/
-  baseURL: https://www.liqpay.ua
   tags:
   - P2P
   - Transfers
@@ -194,7 +188,6 @@ apis:
     EUR.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.liqpay.ua/documentation/en/api/p2p_credit/
-  baseURL: https://www.liqpay.ua
   tags:
   - Payouts
   - Disbursements
@@ -216,7 +209,6 @@ apis:
     JSON signed with SHA-1 using the merchant private key for tamper detection.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.liqpay.ua/documentation/en
-  baseURL: https://www.liqpay.ua
   tags:
   - Webhook
   - Callbacks
@@ -241,7 +233,6 @@ apis:
     within a specified date range. Used for reconciliation, reporting, and accounting.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.liqpay.ua/en/doc/api/information
-  baseURL: https://www.liqpay.ua
   tags:
   - Reporting
   - Archives
