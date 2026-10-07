@@ -1,3 +1,11 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (undated — the file carries no date and git cannot supply one), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+# Coverage demoted 2026-10-07 (roadmap#942, PLAN.md Stage A): this file was written by an API Evangelist
+# sweep and names no billing unit, meters or pricing category read from the provider — it restates the
+# FinOps framework. It is `x-coverage: unmeasured`, and the FOCUS alignment it claimed has been removed.
+x-coverage: unmeasured
+method: generated
 name: LiqPay FinOps
 description: LiqPay transaction pricing is usage-based with no monthly or setup fees. Fees are charged as a percentage of each transaction amount. Domestic Ukrainian card transactions carry a 0.6% merchant fee; international cards may reach up to 2%. High-volume merchants can negotiate reduced rates with PrivatBank. Settlements to merchant accounts occur instantly (same-bank) or within one to three business days (inter-bank).
 url: https://www.liqpay.ua/en/developers

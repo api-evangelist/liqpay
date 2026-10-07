@@ -1,3 +1,7 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (undated — the file carries no date and git cannot supply one), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
 name: LiqPay Rate Limits
 description: LiqPay does not publish explicit API rate limit thresholds in their public documentation. The platform is designed for production payment traffic and enforces anti-fraud controls that may restrict unusual transaction volumes or patterns. Merchants experiencing limit errors will receive error code "limit" in API responses. Contact liqpay.support@privatbank.ua for production throughput requirements.
 url: https://www.liqpay.ua/documentation/en
