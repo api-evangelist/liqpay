@@ -47,3 +47,21 @@ plans:
       - All Standard Merchant features
       - Reduced transaction fee rate
       - Dedicated account management
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: Standard Merchant Account
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: High-Volume Merchant
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
