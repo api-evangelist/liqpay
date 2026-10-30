@@ -66,53 +66,110 @@
 
 LiqPay is a Ukrainian payment platform operated by PrivatBank that provides REST APIs for accepting card payments, creating hosted payment pages, processing subscriptions, managing refunds, sending invoices, and conducting card-to-card transfers. It supports Mastercard, Visa, Apple Pay, Google Pay, and Privat24 wallets across 120+ countries, with full fiscalization (RRO) support for Ukrainian merchants.
 
-## APIs
+**Areas:** Payments · Fintech · Ukraine · Cards · Subscription · Invoicing · P2P Transfers · PrivatBank
 
-- **Checkout API** — Generate signed payment requests for the hosted LiqPay checkout page
-- **Payment Status API** — Look up the current status and details of any transaction
-- **Subscriptions API** — Create and manage recurring billing on daily, weekly, monthly, or yearly cycles
-- **Refunds API** — Issue full or partial refunds on completed payments
-- **Invoice API** — Generate and send itemized invoices to customers by email or phone
-- **P2P Transfers API** — Card-to-card money transfers between individuals
-- **Payouts API** — Merchant-initiated disbursements to customer cards or accounts
-- **Webhooks / Callbacks** — Event-driven server-to-server notifications for payment outcomes
-- **Payment Archive API** — Retrieve historical payment records for reconciliation and reporting
+## LiqPay on APIs.io
 
-## Authentication
+Everything profiled for LiqPay is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/liqpay/](https://apis.io/providers/liqpay/)** — or go straight to one of the APIs or properties below.
 
-All API requests use signature-based authentication:
+### APIs (9)
 
-1. Build a JSON payload with the required parameters including your `public_key`
-2. Base64-encode the JSON payload as `data`
-3. Generate a SHA-1 HMAC: `base64(sha1(private_key + data + private_key))`
-4. POST `data` and `signature` to the API endpoint
+- [LiqPay Checkout API](https://apis.io/apis/liqpay/liqpay-checkout-api/) — Server-side API for generating signed payment requests that redirect customers to the LiqPay hosted checkout page. Supports one-time payments, donations,…
+- [LiqPay Payment Status API](https://apis.io/apis/liqpay/liqpay-payment-status-api/) — Server-to-server API for retrieving the current status and details of a payment by order ID. Returns action, amount, currency, payment status (success,…
+- [LiqPay Subscriptions API](https://apis.io/apis/liqpay/liqpay-subscriptions-api/) — API for creating and managing recurring payment subscriptions. Supports daily, weekly, monthly, and yearly billing cycles. Merchants can create…
+- [LiqPay Refunds API](https://apis.io/apis/liqpay/liqpay-refunds-api/) — Server-to-server API for initiating full or partial refunds on previously completed payments. Refunds are returned to the original payment method (card or…
+- [LiqPay Invoice API](https://apis.io/apis/liqpay/liqpay-invoice-api/) — API for generating and sending payment invoices to customers by email or phone number. Invoices include itemized goods lists, expiration dates, and…
+- [LiqPay P2P Transfers API](https://apis.io/apis/liqpay/liqpay-p2p-transfers-api/) — API for card-to-card (P2P) money transfers between individuals. Supports transfers by card number, card token, Privat24 account, mobile phone number, or…
+- [LiqPay Payouts API](https://apis.io/apis/liqpay/liqpay-payouts-api/) — API for merchant-initiated payouts (credit transfers) to customer cards or accounts. Used for marketplace disbursements, cashback, and refund-style credit…
+- [LiqPay Webhooks (Callbacks)](https://apis.io/apis/liqpay/liqpay-webhooks-callbacks/) — Server-to-server callback notifications sent by LiqPay to the merchant server_url on payment events including successful payment, failure, chargeback, and…
+- [LiqPay Payment Archive API](https://apis.io/apis/liqpay/liqpay-payment-archive-api/) — Informational API for retrieving a full archive of accepted payments for the merchant account within a specified date range. Used for reconciliation,…
 
-Never expose your `private_key` in client-side code.
+### Published properties
 
-## Base URLs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| Purpose | URL |
-|---------|-----|
-| Server-to-server API | `https://www.liqpay.ua/api/request` |
-| Client checkout redirect | `https://www.liqpay.ua/api/3/checkout` |
+#### Security (1)
 
-## SDKs
+Authentication, trust centre, and vulnerability disclosure.
 
-- PHP: https://github.com/liqpay/sdk-php
-- Python: https://github.com/liqpay/sdk-python
+- [Liqpay Domain Security](https://apis.io/security/liqpay/liqpay-domain-security/)
 
-## Pricing
+#### Plans and pricing (1)
 
-- Domestic Ukrainian cards: **0.6%** per transaction
-- International cards: **up to 2%** per transaction
-- No monthly fees, no setup fees
-- High-volume merchants may negotiate reduced rates
+Published plans, tiers and prices.
 
-## Documentation
+- [Plans](https://apis.io/plans/liqpay/plans/)
 
-https://www.liqpay.ua/documentation/en
+#### Rate limits (1)
 
-## Support
+Published request limits.
 
-- Email: liqpay.support@privatbank.ua
-- Portal: https://www.liqpay.ua/en/support
+- [Rate Limits](https://apis.io/rate-limits/liqpay/rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Finops](https://apis.io/finops/liqpay/finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://liqpay.ua)
+- [Documentation](https://www.liqpay.ua/documentation/en)
+- [Support](https://www.liqpay.ua/en/support)
+- [Terms of service](https://www.liqpay.ua/en/doc/informations)
+
+## API Evangelist rating
+
+**Kin Score 13.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 35.7 |
+| Access clarity | 5.3 |
+
+**Agent readiness 5.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.7** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/liqpay/](https://apis.io/providers/liqpay/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for LiqPay: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/liqpay/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
